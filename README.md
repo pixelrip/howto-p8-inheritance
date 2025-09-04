@@ -2,6 +2,8 @@
 
 This repository demonstrates a common method for achieving class-like inheritance in PICO-8 Lua using metatables. The project is a simple PICO-8 cartridge where a `Player` object and several `Enemy` objects inherit common properties and methods from a base `Entity` object.
 
+The code here expands on the examples in [How to Create Class-Like Objects and Constructors in PICO-8](https://github.com/pixelrip/howto-p8-constructor), which may provide additional useful context.
+
 
 ## Prerequisites
 
@@ -38,14 +40,6 @@ project/
 ├── scripts/               # Build automation
 └── docs/                  # Documentation
 ```
-
-
-## Workflow
-
-- Edit spritesheet in `assets/sprites.p8`
-- Edit audio (sfx and patterns) in `assets/audio.p8`
-- Build the project with `./scripts/build.sh`
-- Load and run the compiled file in Pico-8
 
 ## How This Demonstrates Inheritance in Lua
 Lua doesn't have built-in classes like Java or C++, but it provides a powerful mechanism called metatables that allows us to simulate them. This project uses **metatables** to create an inheritance chain.
